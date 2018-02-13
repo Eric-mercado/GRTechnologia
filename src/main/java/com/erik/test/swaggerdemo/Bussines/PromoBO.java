@@ -10,21 +10,10 @@ public class PromoBO {
 
     @Id
     private String id;
-
-    @NotNull
     private Set<ProductoBO> productos;
-
-    @NotNull
     private int precio;
-
-
-    @NotNull
     private String promoName;
-
-    @NotNull
     private Set<String>tags;
-
-    @NotNull
     private String descripcion;
     private int puntos;
     private int precioPuntos;

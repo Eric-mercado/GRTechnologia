@@ -11,7 +11,7 @@ public class ProductoBO {
         @Id
         private String id;
 
-        @NotNull
+
         private String nombre;
 
     @Override
@@ -28,10 +28,10 @@ public class ProductoBO {
                 '}';
     }
 
-        @NotNull
+
         private double precio;
 
-        @NotNull
+
         private Set<String> tags;
 
         private int puntosNuevos;
@@ -41,7 +41,7 @@ public class ProductoBO {
 
         private String imageLocation;
 
-        @NotNull
+
         private String descripcion;
 
         public ProductoBO(String id, String nombre, double precio, Set<String> tags, int puntosNuevos, int precioPuntos, String imageLocation, String descripcion) {
