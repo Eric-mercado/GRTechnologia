@@ -3,6 +3,7 @@ package com.erik.test.swaggerdemo.Bussines;
 
 import org.springframework.data.annotation.Id;
 
+import javax.validation.constraints.NotNull;
 import java.util.Set;
 
 public class ProductoBO {
@@ -10,6 +11,7 @@ public class ProductoBO {
         @Id
         private String id;
 
+        @NotNull
         private String nombre;
 
     @Override
@@ -26,15 +28,20 @@ public class ProductoBO {
                 '}';
     }
 
+        @NotNull
         private double precio;
 
+        @NotNull
         private Set<String> tags;
 
         private int puntosNuevos;
+
         private int precioPuntos;
+
 
         private String imageLocation;
 
+        @NotNull
         private String descripcion;
 
         public ProductoBO(String id, String nombre, double precio, Set<String> tags, int puntosNuevos, int precioPuntos, String imageLocation, String descripcion) {
@@ -51,6 +58,10 @@ public class ProductoBO {
 
         protected ProductoBO(){
 
+        }
+
+        public String getId(){
+            return id;
         }
 
         public String getNombre() {
