@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class MongoDao {
-
+/*
     MongoClient mongo;
     private static final String HOST_NAME = "localhost";
     private static final int DEFAULT_PORT = 27017;
@@ -32,5 +32,5 @@ public class MongoDao {
             e.printStackTrace();
         }
         return mongo.getDB("journaldev");
-    }
+    }*/
 }

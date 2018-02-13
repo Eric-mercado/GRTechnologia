@@ -7,6 +7,7 @@ import java.util.Set;
 
 public class PromoBuilder {
 
+        private String id;
         private Set<ProductoBO> productos;
         private int precio;
         private Set<String> tags;
@@ -14,6 +15,12 @@ public class PromoBuilder {
         private int puntos;
         private int precioPuntos;
 
+
+        public  PromoBuilder setId(){
+            this.id = id ;
+            return this;
+
+        }
         public PromoBuilder setPromoName(String promoName) {
             this.promoName = promoName;
             return this;
@@ -52,7 +59,9 @@ public class PromoBuilder {
         }
 
         public PromoBO build(){
-            return new PromoBO(this.productos,
+            return new PromoBO(
+                    this.id,
+                    this.productos,
                     this.precio,
                     this.tags,
                     this.descripcion,

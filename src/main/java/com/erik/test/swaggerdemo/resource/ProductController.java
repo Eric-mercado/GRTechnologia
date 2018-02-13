@@ -29,6 +29,7 @@ public class ProductController {
     public ProductoBO getProducto(){
 
         return  new ProductoBuilder()
+                .setiD("producto nuevo")
                 .setDescripcion("producto1")
                 .setImageLocation("www.myPage.com")
                 .setNombre("producto1")

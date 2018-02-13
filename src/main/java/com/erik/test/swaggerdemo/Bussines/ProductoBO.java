@@ -1,31 +1,45 @@
 package com.erik.test.swaggerdemo.Bussines;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+
+import org.springframework.data.annotation.Id;
+
 import java.util.Set;
 
-@Entity
 public class ProductoBO {
 
         @Id
-        @Column
         private String id;
 
-        @Column
         private String nombre;
 
-        @Column
+    @Override
+    public String toString() {
+        return "ProductoBO{" +
+                "id='" + id + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", precio=" + precio +
+                ", tags=" + tags +
+                ", puntosNuevos=" + puntosNuevos +
+                ", precioPuntos=" + precioPuntos +
+                ", imageLocation='" + imageLocation + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                '}';
+    }
+
         private double precio;
 
-        @Column
         private Set<String> tags;
+
         private int puntosNuevos;
         private int precioPuntos;
+
         private String imageLocation;
+
         private String descripcion;
 
-        public ProductoBO(String nombre, double precio, Set<String> tags, int puntosNuevos, int precioPuntos, String imageLocation, String descripcion) {
+        public ProductoBO(String id, String nombre, double precio, Set<String> tags, int puntosNuevos, int precioPuntos, String imageLocation, String descripcion) {
+
+            this.id = id;
             this.nombre = nombre;
             this.precio = precio;
             this.tags = tags;
@@ -33,6 +47,10 @@ public class ProductoBO {
             this.precioPuntos = precioPuntos;
             this.imageLocation = imageLocation;
             this.descripcion = descripcion;
+        }
+
+        protected ProductoBO(){
+
         }
 
         public String getNombre() {

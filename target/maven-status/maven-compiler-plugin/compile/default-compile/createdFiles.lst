@@ -1,0 +1,13 @@
+com/erik/test/swaggerdemo/resource/ProductController.class
+com/erik/test/swaggerdemo/config/SwaggerConfig.class
+com/erik/test/swaggerdemo/resource/UserResource$User.class
+com/erik/test/swaggerdemo/resource/UserResource.class
+com/erik/test/swaggerdemo/Bussines/ProductoBO.class
+com/erik/test/swaggerdemo/dao/ProductRepo.class
+com/erik/test/swaggerdemo/Bussines/PromoBO.class
+com/erik/test/swaggerdemo/dao/MongoDao.class
+com/erik/test/swaggerdemo/SwaggerDemoApplication.class
+com/erik/test/swaggerdemo/builder/ProductoBuilder.class
+com/erik/test/swaggerdemo/resource/HelloResource.class
+com/erik/test/swaggerdemo/resource/PromoController.class
+com/erik/test/swaggerdemo/builder/PromoBuilder.class

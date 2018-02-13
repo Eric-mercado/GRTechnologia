@@ -1,0 +1,12 @@
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/config/SwaggerConfig.java
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/resource/HelloResource.java
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/builder/PromoBuilder.java
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/resource/ProductController.java
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/resource/UserResource.java
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/dao/MongoDao.java
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/Bussines/PromoBO.java
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/Bussines/ProductoBO.java
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/SwaggerDemoApplication.java
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/resource/PromoController.java
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/builder/ProductoBuilder.java
+/Users/ericmercado/projects/GRTechnologia/src/main/java/com/erik/test/swaggerdemo/dao/ProductRepo.java

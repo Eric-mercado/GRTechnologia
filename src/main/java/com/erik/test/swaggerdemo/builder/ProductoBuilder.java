@@ -5,6 +5,7 @@ import com.erik.test.swaggerdemo.Bussines.ProductoBO;
 import java.util.Set;
 
 public class ProductoBuilder {
+    private String id;
     private String nombre;
     private double precio;
     private Set<String> tags;
@@ -13,6 +14,11 @@ public class ProductoBuilder {
     private String imageLocation;
     private String descripcion;
 
+
+    public ProductoBuilder setiD(String id){
+        this.id = id;
+        return this;
+    }
     public ProductoBuilder setNombre(String nombre) {
         this.nombre = nombre;
         return this;
@@ -50,7 +56,9 @@ public class ProductoBuilder {
 
     public ProductoBO build(){
 
-        return new ProductoBO(this.nombre,
+        return new ProductoBO(
+                this.id,
+                this.nombre,
                 this.precio,
                 this.tags,
                 this.puntosNuevos,

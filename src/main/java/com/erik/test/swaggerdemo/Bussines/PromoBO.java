@@ -1,10 +1,14 @@
 package com.erik.test.swaggerdemo.Bussines;
 
 
+import org.springframework.data.annotation.Id;
+
 import java.util.Set;
 
 public class PromoBO {
 
+    @Id
+    private String id;
     private Set<ProductoBO> productos;
     private int precio;
     private String promoName;
@@ -13,7 +17,8 @@ public class PromoBO {
     private int puntos;
     private int precioPuntos;
 
-    public PromoBO(Set<ProductoBO> productos, int precio, Set<String> tags, String descripcion, int puntos, int precioPuntos, String promoName) {
+    public PromoBO(String id, Set<ProductoBO> productos, int precio, Set<String> tags, String descripcion, int puntos, int precioPuntos, String promoName) {
+        this.id = id;
         this.productos = productos;
         this.precio = precio;
         this.tags = tags;
